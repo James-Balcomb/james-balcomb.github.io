@@ -6,6 +6,37 @@
 <head>
     <meta charset="utf-8" />
     <title>James Portfolio</title>
+    <link href="indexStyles.css" rel="stylesheet" type="text/css" />
+    <style>
+        caption {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 8px;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px 10px;
+        }
+        tr {
+            height: 50px;
+        }
+        table {
+            border: 2px solid black;
+            width: 75%;
+            margin: auto;
+        }
+        th {
+            background-color: cornflowerblue;
+        }
+        tr:nth-child(odd) {
+            background-color: azure;
+        }
+        tr:nth-child(even) {
+            background-color:cyan;
+        }
+
+    </style>
 </head>
 
 <main>
@@ -14,48 +45,58 @@
     <h1>Portfolio for James Balcomb </h1>
     </header>
 
-    <nav>
-    <hr />
+    <nav class="border">
+    <hr style="border:thin dotted red;" />
     <p><a href="projects.html">Projects</a></p>
     <p></p><a href="testimonials.html">Testimonials</a></p>
     <p></p><a href="contact.html">Contact</a></p>
-    <hr />
+    <hr style="width: 50%; border: 2px solid blueviolet;"/>
     </nav>
 
-    <article id="aboutMe">
+    <article class ="border" id="aboutMe">
     <h2><em>About me</em></h2>
     <img src="images\me_resize.png" alt="Portrait of James Balcomb"/>
     <p>James does GIS etc...</p>
     </article>
 
+   
+
     <article id="pastExperience">
         <h2><em>Past Experiences</em></h2>
-        <img src="images\fishing_resize.png" alt="Picture of me fishing"/>
+        <img src="images\fishing_resize.png" alt="Picture of me fishing" />
         <p>James has done some work</p>
+
+<!--This is where the table for work history goes-->
         <table>
 
             <caption>Employment History</caption>
+            <thead>
             <tr>
                 <th>Years of Employment</th>
                 <th>Title</th>
                 <th>Company</th>
             </tr>
+            </thead>
 
-            <tr>
-                <td>2021-present</td>
-                <td>GISS</td>
-                <td>Deer Creek GIS</td>
-            </tr>
+            <tbody>
+                <tr>
+                   <td>2021-present</td>
+                   <td>GISS</td>
+                   <td>Deer Creek GIS</td>
+                </tr>
 
-            <tr>-
-                <td>2018-2019</td>
-                <td>GIS/CAD Analyst</td>
-                <td>Ecosystem Services</td>
-            </tr>
+                <tr>
+                   <td>2018-2019</td>
+                   <td>GIS/CAD Analyst</td>
+                   <td>Ecosystem Services</td>
+                </tr>
+            </tbody>
 
 
         </table>
     </article>
+
+    <!------------------------------------------------------->
 
     <article id="hobbies">
         <h2><em>Hobbies</em></h2>
